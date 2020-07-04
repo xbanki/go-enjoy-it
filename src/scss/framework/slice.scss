@@ -1,0 +1,15 @@
+/*
+ * Slice framework component.
+ *
+ * A slice is a 'layer' of stackable containers which are full width and height of the viewport,
+ * meant to house content that can transform without affecting one another. The main purpouse
+ * of a slice (along with the afformentioned application) is to enable effortless implementation
+ * of changeable backgrounds, for example a user picked background image.
+ */
+
+.slice {
+	display: inline-block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}

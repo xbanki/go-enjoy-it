@@ -1,0 +1,35 @@
+/*
+ * Custom global styles. This stylesheet ensures the following things:
+ *
+ * 1. Text rendering property is set to 'optimizeLegibility' for all
+ *    elements.
+ *
+ * 2. Import Roboto font from Google Fonts, setting it as the default
+ *    font for all elements.
+ *
+ * 3. All elements have box-sizing: border box property set.
+ *
+ * 4. All elements have the same animation curve.
+ *
+ * 5. HTML and Body element get reset in terms of padding, margin and
+ *    general sizing.
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+
+* {
+	transition: all 12ms cubic-bezier(1.000, 0.000, 0.395, 1.000);
+	text-rendering: optimizeLegibility;
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Roboto', sans-serif;
+	background: #0D1011;
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	padding: 0;
+	margin: 0;
+}

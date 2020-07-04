@@ -1,0 +1,75 @@
+{
+  "name": "go-enjoy-it",
+  "version": "0.0.1+alpha.0",
+  "description": "Simple & beautiful launcher homepage.",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "webpack --progress --config ./tasks/webpack.development.js",
+    "build:production": "webpack --progress --config ./tasks/webpack.production.js",
+    "build:development": "webpack --watch --progress --config ./tasks/webpack.development.js",
+    "lint": "eslint ./**/*.{js,ts} --format table",
+    "lint:ts": "eslint ./**/*.ts --format table",
+    "lint:js": "eslint ./**/*.js --format table",
+    "lint:fix": "eslint ./**/*.{js,ts} --fix --format table",
+    "lint:fix:ts": "eslint ./**/*.ts --fix --format table",
+    "lint:fix:js": "eslint ./**/*.js --fix --format table"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xbanki/go-enjoy-it.git"
+  },
+  "keywords": [
+    "html",
+    "typescript",
+    "scss",
+    "go-enjoy-it"
+  ],
+  "author": "xbanki <contact@xbanki.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xbanki/go-enjoy-it/issues"
+  },
+  "homepage": "https://go.enjoyit.ee/",
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.10.3",
+    "@babel/plugin-transform-typescript": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/animejs": "^3.1.1",
+    "@types/dropzone": "^5.7.0",
+    "@types/js-cookie": "^2.2.6",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "autoprefixer": "^9.8.4",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "core-js": "^3.6.5",
+    "css-loader": "^3.6.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.8.0",
+    "eslint-plugin-html": "^6.0.2",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.0.0",
+    "fork-ts-checker-webpack-plugin": "^4.1.6",
+    "html-loader": "^1.1.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "regenerator-runtime": "^0.13.5",
+    "sass-loader": "^8.0.2",
+    "terser-webpack-plugin": "^2.3.7",
+    "ts-loader": "^6.2.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.10.3",
+    "animejs": "^3.2.0",
+    "dropzone": "^5.7.1",
+    "js-cookie": "^2.2.1",
+    "stackblur-canvas": "^2.3.0",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0"
+  }
+}

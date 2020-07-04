@@ -1,0 +1,34 @@
+{
+  "overrides": [
+    {
+      "env": {
+        "node": true
+      },
+      "extends": "./tasks/.base.eslintrc",
+      "files": [
+        "./**/*.js"
+      ],
+      "parserOptions": {
+        "ecmaVersion": 2015,
+        "sourceType": "module"
+      }
+    },
+    {
+      "extends": [
+        "./tasks/.base.eslintrc",
+        "./tasks/.ts.eslintrc"
+      ],
+      "files": [
+        "./**/*.ts"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "plugins": [
+        "@typescript-eslint"
+      ]
+    }
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  }
+}

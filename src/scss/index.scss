@@ -1,0 +1,25 @@
+/*
+ * Master stylesheet. All component styles
+ * get imported here
+ */
+
+/* Library stylesheets */
+@import './dist/reset.scss';
+@import './dist/normalize.scss';
+@import './dist/preflight.scss';
+
+/* Global styles */
+@import './global.scss';
+
+/* Framework component stylesheets */
+@import './framework/slice.scss';
+
+/* Panel component stylesheets */
+@import './components/panel-body.scss';
+@import './components/panel-menu.scss';
+
+/* Individual component styles */
+@import './components/settings-button.scss';
+
+/* Individual component styles */
+@import './components/slices.scss';
